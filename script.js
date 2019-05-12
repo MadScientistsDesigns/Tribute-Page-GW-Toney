@@ -1,24 +1,71 @@
 // Tribute Page Project GW Toney updated
 // Elizabeth Hildreth
-// 5/6/2019
+// 5/12/2019
 
-// Get the modal
-var modal = document.getElementById("myModal");
+$(document).ready(function () {
+	var items = $("#gallery li"),
+	itemsbyTags = {};
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+	// loop through tags
+	items.each(function(i) {
+		var elem = $(this),
+		tags = elem.data("tags").split(",");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+		// add data attribute for quicksand
+		elem.attr("data-id",i);
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+		$.each(tags, function(key,value){
+			// remove whitespace
+			value = $.trim(value);
+
+			if(!(value in itemsbyTags)){
+				// add empty value
+				itemsbyTags[value] = [];
+			}
+
+			// add image to array
+			itemsbyTags[value].push(elem);
+		});
+	});
+
+	// create "all items" option
+	createList("All Items",items);
+
+	$.each(itemsbyTags, function(k,v){
+		createList(k,v);
+	});
+
+	// click handler
+	$("#navbar a").live("click", function(e){
+		var link = $(this);
+
+		// add active class
+		link.addClass("active").siblings().removeClass("active");
+
+		$("#gallery").quicksand(link.data("list").find("li"));
+		e.preventDefault();
+	});
+
+
+	$("#navbar a:first").click();
+
+	// create the lists
+	function createList(text,items){
+		// create empty unordered list
+		var ul = $("<ul>",{"class":"hidden"});
+
+		$.each(items, function(){
+			$(this).clone().appendTo(ul);
+		});
+
+		// add gallery div
+		ul.appendTo("#gallery");
+
+		// create menu item
+		var a = $("<a>",{
+			html:text,
+			href: "#",
+			data:{list:ul}
+		}).appendTo("#navbar");		
+	}
+});

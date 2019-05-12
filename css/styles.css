@@ -1,0 +1,94 @@
+/* HTML5 Animated Image Gallery */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* general styling */
+body {
+    color: #fcfcfc;
+    font: 14px "Segoe UI", Arial, sans-serif;
+    /* background: gray; */
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #54a6de;
+}
+
+/* custom styling */
+.container {
+    width: 80%;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+/* nav styling */
+#navbar {
+    display: block;
+    height: 40px;
+    background: #444;
+}
+
+#navbar a {
+    color: #ffff;
+    display: inline-block;
+    height: 40px;
+    line-height: 37px;
+    padding: 0 16px;
+}
+
+#navbar a.active, 
+#navbar a:hover {
+    background: #555;
+}
+
+/* content styling */
+#main {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 475px;
+}
+
+#main li{
+    float: left;
+    height: 125px;
+    list-style: none;
+    margin: 6px;
+    position: relative;
+    width: 125px;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow:  0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+}
+
+#main ul {
+    overflow: hidden;
+}
+
+#main ul.hidden {
+    display: none;
+}
+
+#main li a {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+footer{
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:700px){
+    #navbar {
+        height: 80px;
+    }
+}

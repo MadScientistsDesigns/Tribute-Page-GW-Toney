@@ -13,6 +13,11 @@
     <meta name="viewport" content="width=device-width, 
                    initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alice|Charm|PT+Serif" rel="stylesheet">
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="style.css">
     <title>Gerald Wages Toney</title>
 </head>
@@ -24,112 +29,180 @@
     <main id="main">
         <h1 id="title">Gerald Wages Toney</h1>
         <div id="subtitle"><i>
-                <p>Father, Grandfather, WWI Veteran, and Gulf Oil Production Foreman</p>
+                <p>Father, Grandfather, WWI Veteran, Farmer, Gulf Oil Production Foreman</p>
             </i></div>
 
         <div id="img-div">
             <a><img src="image.jpg" id="image" alt="GW Toney in oil field with men" class="center"></img></a>
             <p id="img-caption">Gerald Toney, second from left, in the East Texas Oil Field</p>
         </div>
+        <br>
 
-        <div class="container-1" id="tribute-info">
-            <div class="box-1">
-                <h2> A timeline of Gerald Toney's life:</h2>
-                <br>
-                <ul>
-                    <li><strong>1898</strong> • born on August 17, 1898, in Texas
-                        to Medora Elizabeth Shamburger, age 38, and
-                        Benjamin Hamilton Toney, age 46.
-                        17 Aug 1898 • Texas, USA</li>
+        <!-- <div class="container-1" id="tribute-info"> -->
+        <div class="box-1" id="tribute-info">
+            <h2> A timeline of Gerald Toney's life:</h2>
+            <br>
+            <p><strong id="birth">1898</strong> • born on August 17, 1898, in Texas
+                to Medora Elizabeth Shamburger, age 38, and
+                Benjamin Hamilton Toney, age 46.
+                17 Aug 1898 • Texas, USA</p>
+            <p><strong>1900</strong> • Justice Precinct 5, Wood, Texas, USA</p>
+            <p><strong>1905</strong> • mother Medora Elizabeth passed away on
+                August 4, 1905, in Hawkins, Texas, at the age of 45.</p>
+            <p><strong>1917</strong> • entered in the military on
+                February 12, 1917, when he was 18.</p>
+            <p><strong>1920</strong> • stationed at Fort McIntosh, Webb, Texas, USA</p>
+            <p><strong>1920</strong> • honorably discharged from military service </p>
+            <p><strong>1921</strong> • began work at Gulf Oil </p>
+            <p><strong>1923</strong> • married Bula "Beulah" Fay Houston in Navarro,
+                Texas, on August 8, 1923, when he was 24.</p>
+            <p><strong>1938</strong> • father Benjamin Hamilton passed away on May 31, 1938,
+                in Hawkins, Texas, at the age of 85.</p>
+            <p><strong>1940</strong> • son Gerald Wages Jr was born on November 12, 1940, in Kilgore, Texas. He was 42.</p>
+            <p><strong>1942</strong> • registered for the World War II draft at the age of 44.</p>
+            <p><strong>1950s</strong> • worked as a field supervisor for Gulf Oil over a vast portion of the East Texas field</p>
+            <p><strong>1956</strong> • retired from Gulf Oil after a policy change required all bosses to have a college education</p>
+            <p><strong>1956</strong> • went to work for Rans Jenkins who owned Jenkins Pump & Electric and overhauled pumps until he retired</p>
+            <p><strong>1982</strong> • died on February 21, 1982, in Kilgore, Texas. He was 83.</p>
+        </div>
+        <!-- </div> -->
+        <!--end container-1-->
+        <br>
 
-                    <li><strong>1900</strong> • Justice Precinct 5, Wood, Texas, USA</li>
-                    <li><strong>1905</strong> • mother Medora Elizabeth passed away on
-                        August 4, 1905, in Hawkins, Texas, at the age of 45.</li>
-                    <li><strong>1917</strong> • entered in the military on
-                        February 12, 1917, when he was 18 years old.</li>
-                    <li><strong>1920</strong> • stationed at Fort McIntosh, Webb, Texas, USA</li>
-                    <li><strong>1920</strong> • honorably discharged from military service </li>
-                    <li><strong>1921</strong> • began work at Gulf Oil </li>
-                    <li><strong>1923</strong> • married Bula "Beulah" Fay Houston in Navarro,
-                        Texas, on August 8, 1923, when he was 24 years old.</li>
-                    <li><strong>1938</strong> • father Benjamin Hamilton passed away on May 31, 1938,
-                        in Hawkins, Texas, at the age of 85.</li>
-                    <li><strong>1940</strong> • son Gerald Wages Jr was born on November 12, 1940, in
-                        Kilgore, Texas. He was 42.</li>
-                    <li><strong>1942</strong> • registered for the World War II draft at the age of 44.</li>
-                    <li><strong>1950s</strong> • worked as a field supervisor for Gulf Oil over a vast
-                        portion of the East Texas field</li>
-                    <li><strong>1956</strong> • retired from Gulf Oil after a policy change required all
-                        bosses to have a college education</li>
-                    <li><strong>1956</strong> • went to work for Rans Jenkins who owned Jenkins
-                        Pump & Electric and overhauled pumps until he retired</li>
-                    <li><strong>1982</strong> • died on February 21, 1982, in Kilgore, Texas, he was
-                        83 years old.</li>
-                </ul>
-            </div>
-
-
-
-
-            <div class="box-2">
-                <!-- trigger the modal -->
-                <img id="myImg" src="images/Gerald Wages Toney Birth Certificate 001.jpg" alt="Birth Certificate"
-                    style="width:100%;max-width: 200px;">
-                <label>Birth Certificate</label>
-                <!-- the modal -->
-                <div id="myModal" class="modal">
-                    <!-- the close btn -->
-                    <span class="close">&times;</span>
-                    <!-- modal content (the img) -->
-                    <img class="modal-content" id="img01">
-                    <!-- modal caption (img text) -->
-                    <div id="caption"></div>
-                </div>
-
-                <!-- trigger the modal -->
-                <img id="myImg" src="images/GW Toney in uniform 001.jpg" alt="In WWI Uniform"
-                    style="width:100%;max-width: 200px;">
-                <label>In WWI Uniform</label>
-                <!-- the modal -->
-                <div id="myModal" class="modal">
-                    <!-- the close btn -->
-                    <span class="close">&times;</span>
-                    <!-- modal content (the img) -->
-                    <img class="modal-content" id="img01">
-                    <!-- modal caption (img text) -->
-                    <div id="caption"></div>
-                </div>
-
-                                <!-- trigger the modal -->
-                                <img id="myImg" src="images/GW Toney Honorable Discharge 1920 side 1 001.jpg" alt="Honorable Discharge"
-                                style="width:100%;max-width: 200px;">
-                            <label>Honorable Discharge</label>
-                            <!-- the modal -->
-                            <div id="myModal" class="modal">
-                                <!-- the close btn -->
-                                <span class="close">&times;</span>
-                                <!-- modal content (the img) -->
-                                <img class="modal-content" id="img01">
-                                <!-- modal caption (img text) -->
-                                <div id="caption"></div>
-                            </div>
-            </div><!--end box-2-->
-
-        </div> <!--end container-1-->
-
-
-
-
+        <hr>
         <blockquote>
             <p><i>The measure of who we are is what we do with what we have.</i></p>
-            <div><i>-- Vince Lombardi</i></div>
+            <div id="quoter"><i>-- Vince Lombardi</i></div>
         </blockquote>
+        <hr>
 
-        <h3>Learn more about Gerald on
-            <a href="https://www.ancestry.com/family-tree/person/tree/86531584/person/38533791010/story" target="_blank"
-                id="tribute-link">Ancestry.com</a>
-        </h3>
+        <br>
+        <h3>Animated Photo Gallery</h3>
+        <div class="container">
+            <nav id="navbar"></nav>
+        </div>
+        <!--end container-->
+        
+        <section id="main">
+            <div class="container">
+                <ul id="gallery">
+                    <li data-tags="Childhood,Early Life"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/Gerald Wages Toney Birth Certificate 001.jpg"><img
+                                src="img/Gerald Wages Toney Birth Certificate 125pxw.jpg" alt=""></a></li>
+                    <li data-tags="Childhood,Early Life"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney 1900 US Census rotated.jpg"><img
+                                src="img/GW Toney 1900 US Census rotated small.jpg" alt=""></a></li>
+                    <li data-tags="Early Life,Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney in uniform 001.jpg"><img src="img/GW Toney in uniform small.jpg"
+                                alt=""></a></li>
+                    <li data-tags="Early Life, Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney WWI dog tag 001.jpg"><img src="img/GW Toney WWI dog tag small.jpg"
+                                alt=""></a></li>
+                    <li data-tags="Early Life,Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney WWI on Horse 001.jpg"><img src="img/GW Toney WWI on Horse small.jpg"
+                                alt=""></a></li>
+                    <li data-tags="Early Life,Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Honorable Discharge 1920 side 1 001.jpg"><img
+                                src="img/GW Toney Honorable Discharge 1920 side 1 small.jpg" alt=""></a></li>
+                    <li data-tags="Early Life,Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Honorable Discharge 1920 side 2 001.jpg"><img
+                                src="img/GW Toney Honorable Discharge 1920 side 2 small.jpg" alt=""></a></li>
+                    <li data-tags="Early Life,Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Certificate of Furlough 1920 side 1 001.jpg"><img
+                                src="img/GW Toney Certificate of Furlough 1920 side 1 small.jpg" alt=""></a></li>
+                    <li data-tags="Early Life,Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Cerificate of Furlough 1920 side 2 001.jpg"><img
+                                src="img/GW Toney Cerificate of Furlough 1920 side 2 small.jpg" alt=""></a></li>
+                    <li data-tags="Early Life,Military"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney age 23 001.jpg"><img src="img/GW Toney age 23 small.jpg" alt=""></a></li>
+                    <li data-tags="Early Life"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and Bula 001.jpg"><img src="img/GW Toney and Bula small.jpg" alt=""></a>
+                    </li>
+                    <li data-tags="Early Life"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/Gerald W Toney Marriage Certificate 1923 001.png"><img
+                                src="img/Gerald W Toney Marriage Certificate 1923 small .png" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and son 1940s 001.jpg"><img
+                                src="img/GW Toney and son 1940s 001 small.jpg" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and son 1940s 002.jpg"><img
+                                src="img/GW Toney and son 1940s 002 small.jpg" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and son 1940s 003.jpg"><img
+                                src="img/GW Toney and son 1940s 003 small.jpg" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and son 1940s 004.jpg"><img
+                                src="img/GW Toney and son 1940s 004 small.jpg" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and son 1941 001.jpg"><img src="img/GW Toney and son 1941 small.jpg"
+                                alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and son 1942 001.jpg"><img src="img/GW Toney and son 1942 small.jpg"
+                                alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney at a meeting rotated.jpg"><img
+                                src="img/GW Toney at a meeting rotated small.jpg" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/Automobile Receipt 1940 001.jpg"><img src="img/Automobile Receipt 1940 small.jpg"
+                                alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney War Ration Book Two 001.jpg"><img
+                                src="img/GW Toney War Ration Book Two small.jpg" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Basic Milage Ration 1940 Chevy 001.jpg"><img
+                                src="img/GW Toney Basic Milage Ration 1940 Chevy small.jpg" alt=""></a></li>
+                    <li data-tags="Middle Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Notice of Draft Classification 1942 001.jpg"><img
+                                src="img/GW Toney Notice of Draft Classification 1942 small.jpg" alt=""></a></li>
+                    <li data-tags="Later Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney and grandchild 001.jpg"><img src="img/GW Toney and grandchild small.jpg"
+                                alt=""></a></li>
+                    <li data-tags="Later Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney 3 generations 1968 001.jpg"><img
+                                src="img/GW Toney 3 generations 1968 small.jpg" alt=""></a></li>
+                    <li data-tags="Later Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Gulf Credit Card side 1 001.jpg"><img
+                                src="img/GW Toney Gulf Credit Card side 1 small.jpg" alt=""></a></li>
+                    <li data-tags="Later Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Gulf 1957 35 Years of Service 001.jpg"><img
+                                src="img/GW Toney Gulf 1957 35 Years of Service small.jpg" alt=""></a></li>
+                    <li data-tags="Later Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Veterans of WWI 1978 side 1 001.jpg"><img
+                                src="img/GW Toney Veterans of WWI 1978 side 1 small.jpg" alt=""></a></li>
+                    <li data-tags="Later Years"><a class="fancybox" rel="group" data-fancybox="gallery"
+                            href="img/GW Toney Kilgoround article 001.jpg"><img
+                                src="img//GW Toney Kilgoround article small.jpg" alt=""></a></li>
+                </ul>
+                <!--end gallery-->
+            </div>
+            <!--end container-->
+
+            <footer>Gerald W Toney Tribute Page &copy; 2019</footer>
     </main>
+
+    <!-- include JQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- include Quicksand Plugin -->
+    <script src="js/jquery.quicksand.js"></script>
+
+    <!-- include fancybox -->
+    <script src="js/fancybox/jquery.fancybox-buttons.js"></script>
+    <script src="js/fancybox/jquery.fancybox-media.js"></script>
+    <script src="js/fancybox/jquery.fancybox-thumbs.js"></script>
+    <script src="js/fancybox/jquery.fancybox.js"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+
+    <!-- include custom js -->
+    <script src="js/script.js"></script>
+
+    <!-- call fancybox -->
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
