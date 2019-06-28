@@ -2,18 +2,22 @@
  Elizabeth Hildreth
  5/12/2019  */
 
-
+/* BODY */
 body {
     width: 95%;
     position: relative;
     color: darkslategray;
     font-family: 'PT Serif', serif;
 }
+
 .bodyBorder {
     border-color: white;
     border-width: 10px;
     border-style: solid;   
 }
+/* END BODY */
+
+/* TOP SECTION */
 #main {
     background-color: rgb(238, 237, 237);
     border-color: white;
@@ -34,25 +38,29 @@ img {
     width: 95%;
     padding-top: 5px;
 }
+
 #img-caption {
     text-align: center;
     font-size: 18px;
     padding-bottom: 5px;
 }
+
 #img-div {
     background: white;
     margin: 7px 7px 2px 7px;
 }
+
 #title {
     text-align: center;
 }
+
 #subtitle {
     text-align: center;
     font-size: 18px;
 }
+/* END TOP SECTION */
 
-
-
+/* TIMELINE SECTION */
 h2 {
     text-align: center;
 }
@@ -62,13 +70,14 @@ h2 {
 p {
     font-size: 19px;
 }
+/* END TIMELINE SECTION */
 
+/* BLOCKQUOTE SECTION */
 blockquote {
     padding: 20px 0;
     font-family: 'Charm', cursive;
-    /* font-family: 'PT Serif', serif; */
-    /* font-family: 'Alice', serif; */
 }
+
 blockquote p {
     text-align: center;
     font-size: 1.9em;
@@ -78,13 +87,13 @@ blockquote #quoter {
     text-align: center;
     font-size: 1.4em;
 }
+/* END BLOCKQUOTE SECTION */
 
+/* FANCYBOX SECTION */
 h3 {
     text-align: center;
     font-size: 1.4em;
 }
-
-
 
 /* fancybox custom css */
 * {
@@ -96,7 +105,6 @@ h3 {
 body {
     color: #222;
     font: 14px;
-    /* background: gray; */
 }
 
 a {
